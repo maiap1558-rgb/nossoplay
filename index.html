@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nosso Play 💚</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<section id="perfis">
+  <div class="logo">Nosso <i>Play</i></div>
+  <h1>Quem está assistindo?</h1>
+  <div class="lista" id="lista"></div>
+</section>
+
+<div id="splash"><div class="logo">Nosso <i>Play</i></div></div>
+
+<div id="app">
+  <header>
+    <button class="logo logo-btn" id="logoHome" aria-label="Ir para a página inicial">Nosso <i>Play</i></button>
+    <nav class="nav"><button data-tab="inicio" class="on">Início</button><button data-tab="momentos">🎁 Presentes</button></nav>
+    <button class="mini" id="trocar" aria-label="Trocar de perfil"><span class="av" id="miniAv"></span><span>Trocar perfil</span></button>
+  </header>
+  <section class="hero" id="hero">
+    <div>
+      <div class="tags" id="tags"></div>
+      <h2 id="hTitulo"></h2>
+      <p id="hDesc"></p>
+      <button class="btn play" id="btnPlay">▶ Assistir</button>
+      <button class="btn info" id="btnInfo">ⓘ Mais informações</button>
+    </div>
+  </section>
+  <section id="longe">
+    <h2>💌 De muito longe</h2>
+    <div id="gate">
+      <p class="sub">Este conteúdo é protegido. Digite a senha para entrar.</p>
+      <div class="gaterow"><input id="senha" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Digite a senha" aria-label="Senha"><button class="btn play" id="entrar">Entrar</button></div>
+      <div id="gateErro" role="alert">Errou, tente novamente</div>
+      <button class="btn info" id="dica" style="margin-top:12px">Dica</button>
+      <p id="gateDica"></p>
+    </div>
+    <div id="longeConteudo"></div>
+  </section>
+  <section id="momentos">
+    <h2>🎁 Presentes</h2>
+    <p class="sub">Um vídeo para cada presente. Quando um terminar, é só ir para o próximo.</p>
+    <div class="screen" id="screen"></div>
+    <div class="epinfo"><b id="epT"></b><span id="epN"></span></div>
+    <div class="ctrls"><button class="btn info" id="ant">◀ Anterior</button><button class="btn play" id="prox">Ir para o próximo ▶</button></div>
+    <div class="eps" id="eps"></div>
+  </section>
+  <div id="rows"></div>
+  <footer>Uma produção original feita com código e muito carinho ♥</footer>
+</div>
+
+<div id="modal"><div class="box"><button class="x" id="fechar" aria-label="Fechar">✕</button><div class="cap" id="mCap"></div><div class="txt"><h4 id="mT"></h4><div class="meta" id="mM"></div><p id="mD"></p></div></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
